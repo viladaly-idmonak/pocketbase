@@ -46,8 +46,5 @@
 - Added support for protected files ([#215](https://github.com/pocketbase/pocketbase/issues/215)).
   Requires JS SDK v0.14.0+ or Dart SDK v0.9.0+.
   It works with a short lived (~5min) file token passed as query param with the file url.
-  For more details and example, you could check https://pocketbase.io/docs/files-handling/#protected-files.
-
-- ⚠️ Fixed typo in `Record.WithUnkownData()` -> `Record.WithUnknownData()`.
-
-- Added simple loose wildcard 
+  > **Personal note:** The ~5min token expiry is quite short if you have slow connections or large files. You may want to pre-fetch the token before initiating any large downloads.
+  For more details and example, you could 
