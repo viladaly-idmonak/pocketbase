@@ -57,7 +57,4 @@
     jsvm.BindMails(vm)
     jsvm.BindApis(vm)
     ```
-    > **Personal note:** I'm using `jsvm.BindHTTP(vm)` and `jsvm.BindFilesystem(vm)` extensively in my hooks — good to have these exported so custom Go embedders can reuse them without reimplementing.
-
-- Updated `modernc.org/sqlite` to v1.49.1 (SQLite 3.53.0).
-
+    > **Personal note:** I'm using `jsvm.BindHTTP(vm)` and `jsvm.BindFilesystem(vm)` heavily in my own hooks — really glad these are exported now. Makes it much easier to share reusable JSVM utilities across projects without duplicating boilerplate.
