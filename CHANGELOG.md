@@ -57,4 +57,4 @@
     jsvm.BindMails(vm)
     jsvm.BindApis(vm)
     ```
-    > **Personal note:** I'm using `jsvm.BindHTTP(vm)` and `jsvm.BindFilesystem(vm)` heavily in my own hooks — really glad these are exported now. Makes it much easier to share VM setup logic across projects without duplicating internal bindings.
+    > **Personal note:** I'm using `jsvm.BindHTTP(vm)` and `jsvm.BindFilesystem(vm)` heavily in my custom hooks — really glad these are now exported. Makes it much easier to reuse the same JSVM setup across multiple projects without duplicating boilerplate.
